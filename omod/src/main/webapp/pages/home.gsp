@@ -1,6 +1,9 @@
 <%
 ui.decorateWith("kenyaemr", "standardPage")
-ui.includeJavascript("https://cdn.ckeditor.com/ckeditor5/11.0.1/classic/ckeditor.js")
+ui.includeJavascript("ehrcasebasedsurveillance", "ckeditor.js")
+ui.includeJavascript("ehrcasebasedsurveillance", "config.js")
+ui.includeCss("ehrcasebasedsurveillance", "contents.css")
+ui.includeJavascript("ehrcasebasedsurveillance", "styles.js")
 %>
 
         <style>
@@ -68,8 +71,8 @@ ui.includeJavascript("https://cdn.ckeditor.com/ckeditor5/11.0.1/classic/ckeditor
               box-sizing: border-box;
            }
 
-        .button{
-            margin-top: 20px;
+        button{
+            margin-top: 50px;
             background-color: #4CAF50;
             border: none;
             color: white;
@@ -130,6 +133,6 @@ ui.includeJavascript("https://cdn.ckeditor.com/ckeditor5/11.0.1/classic/ckeditor
                 </textarea>
            </div>
 
-          <button class="button" > Send </button>
+         <button class="button" >  <a href="results.page"> Send </a> </button>
         </form>
         </div>
