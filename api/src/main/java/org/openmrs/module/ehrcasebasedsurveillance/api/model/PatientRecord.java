@@ -1,8 +1,8 @@
-package org.openmrs.module.ehrcasebasedsurveillance.model;
-
-import java.util.Date;
+package org.openmrs.module.ehrcasebasedsurveillance.api.model;
 
 public class PatientRecord {
+
+	private Integer id;
 	
 	private Integer IdNumber;
 	
@@ -17,6 +17,14 @@ public class PatientRecord {
 	private Integer year;
 	
 	private String notification;
+
+	public Integer getId(){
+		return id;
+	}
+
+	public  void setId(int id){
+		this.id = id;
+	}
 	
 	public Integer getIdNumber() {
 		return IdNumber;
